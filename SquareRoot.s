@@ -31,7 +31,7 @@ main:
 	#For loop
 	loop1:
 		slt $t2, $t1, $t0
-		beq $t2, $zero, loop2	#ble $t2, $t1, loop2
+		beq $t2, $zero, loop2	
 		nop
 		
 		srl $t0, $t0, 2			#Shift $t0 right by 2
@@ -43,7 +43,7 @@ main:
 		
 		add $t3, $t4, $t0		#if $t0 != zero add t0 and t4 into t3
 		slt $t2, $t1, $t3		
-		beq $t2, $zero, else1	#bge $t0, $t1, else1
+		beq $t2, $zero, else1	
 		nop
 		
 		srl $t4, $t4, 1			#shift $t4 right by 1
